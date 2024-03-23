@@ -534,7 +534,7 @@ a.keyword {
 * Container
 */
 #container {
-  width: 810px;
+  width: 900px;
   margin: 0 auto;
   padding: 0 30px;
   background-color: #fff;
@@ -567,11 +567,11 @@ a.keyword {
 * 2カラムレイアウト
 */
 #wrapper {
-  width: 560px;
+  width: 630px;
   float: left;
 }
 #box2 {
-  width: 220px;
+  width: 240px;
   float: right;
   font-size: 14px;
   word-wrap: break-word;
@@ -621,7 +621,7 @@ a.keyword {
 * パンくず（カテゴリーページで表示されます）
 */
 #top-box {
-  margin: 10px auto 20px;
+  margin: 16px auto 16px;
   font-size: 90%;
 }
 /**
@@ -656,7 +656,7 @@ a.keyword {
 }
 .entry-header {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .entry-title {
   margin: 0;
@@ -675,8 +675,8 @@ a.keyword {
 .date {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 15px;
-  padding-bottom: 5px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #ddd;
 }
 .date a {
@@ -692,7 +692,7 @@ a.keyword {
 * カテゴリ
 */
 .categories {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 14px;
 }
 .categories a {
@@ -1055,8 +1055,8 @@ ul.table-of-contents:before {
   margin-bottom: 5px;
 }
 .hatena-module-profile .profile-activities {
-  margin-top: .3em;
-  margin-bottom: .3em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
   font-style: italic;
   font-size: 90%;
   opacity: 0.7;
@@ -1167,15 +1167,28 @@ ul.table-of-contents:before {
   clear: both;
   content: ".";
 }
+.pager .pager-arrow {
+  display: none;
+}
 .pager .pager-prev {
   float: left;
   text-align: left;
   width: 45%;
 }
+.pager .pager-prev a:before {
+  font-family: "FontAwesome";
+  content: "\f060";
+  padding-right: 2px;
+}
 .pager .pager-next {
   float: right;
   text-align: right;
   width: 45%;
+}
+.pager .pager-next a:after {
+  font-family: "FontAwesome";
+  content: "\f061";
+  padding-left: 4px;
 }
 /**
 * Footer
@@ -1244,7 +1257,7 @@ ul.table-of-contents:before {
   color: #b7a887;
 }
 .page-archive .archive-entries .categories {
-  margin: 0 0 .5em;
+  margin: 0 0 0.5em;
 }
 .page-archive .archive-entries .entry-description {
   margin: 0 0 1em;
@@ -1266,4 +1279,220 @@ ul.table-of-contents:before {
 }
 /**
 * Import Media Queries
+*/
+/**
+* Media Queries - Retina Display
+*/
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .hatena-module-search-box .search-module-button {
+    background: transparent url(http://blog.hatena.ne.jp/images/theme/search@2x.png) no-repeat right center;
+    background-size: 20px 20px;
+  }
+}
+/**
+* Media Queries - Tablet
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  #container {
+    width: 724px;
+  }
+  #wrapper {
+    width: 460px;
+  }
+  #box2 {
+    width: 245px;
+  }
+}
+/**
+* Media Queries - Small Tablet & Smartphone
+*/
+@media (max-width: 767px) {
+  #globalheader-container {
+    position: static;
+  }
+  #container {
+    width: 100%;
+    padding: 0;
+    word-wrap: break-word;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  #container #content {
+    padding: 0 0 20px;
+  }
+  #blog-title {
+    margin-bottom: 16px;
+    padding: 0!important;
+  }
+  #blog-title #blog-title-content #title {
+    padding: 20px 8px 0;
+    font-size: 24px;
+  }
+  #blog-title #blog-title-content #blog-description {
+    font-size: 14px;
+  }
+  #blog-title #top-box {
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+  .breadcrumb {
+    margin-bottom: 0!important;
+    margin: 0 8px;
+    padding: 4px 8px;
+    background-color: #fff;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+  #wrapper,
+  #main {
+    float: none;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  #box2 {
+    float: none;
+    width: 100%;
+  }
+  #box2-inner {
+    width: 100%;
+  }
+  .hatena-module {
+    width: 100%;
+    float: none;
+  }
+  .entry-header-menu {
+    top: -30px;
+    left: 0px;
+  }
+  .archive-heading {
+    margin: 8px 8px 16px;
+    color: #fff;
+    -moz-text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    -webkit-text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+  .archive-entry,
+  .entry {
+    margin: 8px 8px 16px;
+    padding: 8px;
+    background-color: #fff;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+  .archive-entry .entry-header,
+  .entry .entry-header {
+    margin-bottom: 8px;
+  }
+  .archive-entry .entry-header .entry-date,
+  .entry .entry-header .entry-date {
+    margin-bottom: 8px;
+  }
+  .archive-entry .entry-header .entry-title,
+  .entry .entry-header .entry-title {
+    font-size: 1.3em;
+  }
+  .archive-entry .categories,
+  .entry .categories,
+  .archive-entry .entry-categories,
+  .entry .entry-categories,
+  .archive-entry .entry-footer,
+  .entry .entry-footer {
+    display: none;
+  }
+  .archive-entry .entry-content,
+  .entry .entry-content {
+    padding-bottom: 8px;
+    line-height: 1.4;
+    overflow: hidden;
+    border-bottom-style: none;
+  }
+  .archive-entry .entry-content p,
+  .entry .entry-content p {
+    margin: 0 0 0.5em 0;
+  }
+  .archive-entry .entry-content a.entry-see-more,
+  .entry .entry-content a.entry-see-more {
+    float: right;
+    margin: 8px 8px 0;
+    display: block;
+    *zoom: 1;
+  }
+  .archive-entry .entry-content a.entry-see-more:after,
+  .entry .entry-content a.entry-see-more:after {
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    content: ".";
+  }
+  .archive-entry {
+    margin-bottom: 16px!important;
+  }
+  .archive-entry-body .entry-description {
+    margin: 0 0 8px!important;
+  }
+  .pager {
+    margin: 24px 0 16px;
+  }
+  .pager .pager-prev,
+  .pager .pager-next {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0 8px 0;
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+    background-color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+  .pager .pager-prev {
+    margin-bottom: 16px;
+  }
+  .hatena-module {
+    width: auto;
+    margin: 0 8px 16px;
+    background-color: #fff;
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  }
+  .hatena-module .hatena-module-title {
+    margin-bottom: 0;
+  }
+  .hatena-module .hatena-module-body {
+    padding: 8px;
+  }
+  .hatena-module-category .hatena-module-body li {
+    display: block;
+    background-color: transparent;
+  }
+  .footer {
+    padding: 10px 0 40px;
+  }
+  .footer .footer-links {
+    color: white;
+  }
+}
+/**
+* Media Queries - Smartphone
 */
