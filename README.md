@@ -4,3 +4,6 @@
 
 ## Links
 [Hatena Blog](https://www.ktgw.jp)
+
+## Author
+[yoshitaka-k](https://github.com/yoshitaka-k)
