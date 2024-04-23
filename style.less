@@ -643,6 +643,12 @@ ul.table-of-contents {
         font-family: FontAwesome;
         content: "\f304";
     }
+
+    .recent-entries-item a:before{
+        font-family: FontAwesome;
+        content: "\f14b";
+        padding-right: 4px;
+    }
 }
 /**
 * 月刊アーカイブ
@@ -658,8 +664,7 @@ ul.table-of-contents {
 */
 .hatena-module-category {
     .hatena-module-title:before {
-        font-family: FontAwesome;
-        content: "\f02b";
+        .fontawesome(@fa-var-tag, 0);
     }
     .hatena-module-body {
         li {
@@ -680,6 +685,7 @@ ul.table-of-contents {
 */
 .hatena-module-circles {
     .hatena-module-title:before {
+        .fontawesome(@fa-var-tag, 0);
         font-family: FontAwesome;
         content: "\f500";
     }
