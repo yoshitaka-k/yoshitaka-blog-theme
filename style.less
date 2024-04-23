@@ -588,7 +588,10 @@ ul.table-of-contents {
 */
 .hatena-module-profile {
     margin-bottom: 4px;
-
+    .hatena-module-title:before {
+        font-family: FontAwesome;
+        content: "\f007";
+    }
     .profile-icon {
         margin-bottom: 5px
     }
@@ -632,11 +635,32 @@ ul.table-of-contents {
         line-height: 1.5;
     }
 }
-
+/**
+* 最新記事
+*/
+.hatena-module-recent-entries {
+    .hatena-module-title:before {
+        font-family: FontAwesome;
+        content: "\f304";
+    }
+}
+/**
+* 月刊アーカイブ
+*/
+.hatena-module-archive {
+    .hatena-module-title:before {
+        font-family: FontAwesome;
+        content: "\f133";
+    }
+}
 /**
 * カテゴリー
 */
 .hatena-module-category {
+    .hatena-module-title:before {
+        font-family: FontAwesome;
+        content: "\f02b";
+    }
     .hatena-module-body {
         li {
             display: inline-block;
@@ -652,9 +676,13 @@ ul.table-of-contents {
 }
 
 /**
-* 最新記事
+* 参加グループ
 */
-.hatena-module-recent-entries {
+.hatena-module-circles {
+    .hatena-module-title:before {
+        font-family: FontAwesome;
+        content: "\f500";
+    }
 }
 
 /**
