@@ -609,9 +609,23 @@ ul.table-of-contents {
     .profile-description {
     }
     .profile-links {
-        margin-top: 15px;
-        padding-top: 15px;
+        line-height: 1.3em;
+        margin: 15px 0 20px;
+        padding: 15px 0 10px;
         border-top: dotted 3px #b7a887;
+        border-bottom: dotted 3px #b7a887;
+        &:before {
+            content: "リンク";
+            display: block;
+            position: relative;
+            top: -25px;
+            left: 9px;
+            width: 3em;
+            margin-bottom: -20px;
+            color: #b7a887;
+            font-weight: bold;
+            background-color: white;
+        }
         a {
             display: inline-block;
             margin-bottom: 4px;
@@ -633,6 +647,21 @@ ul.table-of-contents {
     li {
         padding: 4px 0;
         line-height: 1.5;
+    }
+}
+/**
+* 関連記事
+*/
+.hatena-module-related-entries {
+    .hatena-module-title:before {
+        font-family: FontAwesome;
+        content: "\f304";
+    }
+
+    .related-entries-item a:before{
+        font-family: FontAwesome;
+        content: "\f14b";
+        padding-right: 4px;
     }
 }
 /**
