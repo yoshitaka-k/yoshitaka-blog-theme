@@ -6,7 +6,7 @@
 lessc --clean-css style.less style.min.css で、コンパイルしてる
 
 ## npm install -g
-less
+less  
 less-plugin-clean-css
 
 ## Links
