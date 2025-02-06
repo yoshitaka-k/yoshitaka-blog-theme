@@ -17,7 +17,7 @@
 @import "less/_variable.less";
 
 // Font Awesome
-@import "fontawesome/font-awesome.less";
+@import "fontawesome/fontawesome.less";
 
 /**
 * Common Style
@@ -38,6 +38,10 @@ a {
     }
     &:visited {
         color: @visited;
+    }
+    &.blank-link:after {
+        .fontawesome-after(@fa-var-arrow-up-right-from-square);
+        font-size: 11px;
     }
 }
 
@@ -465,7 +469,7 @@ ul.table-of-contents {
         float: right;
         color: @text-light;
         &:before {
-            .fontawesome(@fa-var-clock-o, 4px);
+            .fontawesome(@fa-var-clock, 4px);
         }
     }
     &:after {
