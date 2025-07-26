@@ -329,16 +329,24 @@ a.keyword {
         padding-left: 0.5em;
         line-height: 1.5;
     }
+    h1, h2 {
+        border-bottom: 1px solid #b7a887;
+    }
+    h2,h3,h4 {
+        border-left: 8px solid #b7a887;
+    }
+    h3,h4 {
+        font-size: 120%;
+    }
     h1 {
         color: @title;
         font-size: 160%;
         border-left: 8px solid #b7a887;
-        border-bottom: 1px solid #b7a887;
     }
-    h2,h3,h4 {
-        font-size: 130%;
-        border-left: 8px solid #b7a887;
-        border-bottom: 1px solid #b7a887;
+    h2 {
+        font-size: 140%;
+        color: @title2;
+        background-color: rgb(183 168 135 / 25%);
     }
     h4 {
         border-bottom: none;
@@ -565,6 +573,7 @@ ul.table-of-contents {
     color: white;
     font-weight: bold;
     text-align: center;
+    text-shadow: 1px 1px #9b875e;
     line-height: 1em;
     background-color: @module-header;
     .box-shadow();
@@ -587,8 +596,7 @@ ul.table-of-contents {
 .hatena-module-profile {
     margin-bottom: 4px;
     .hatena-module-title:before {
-        font-family: FontAwesome;
-        content: "\f007";
+        .fontawesome(@fa-var-user);
     }
     .profile-icon {
         margin-bottom: 5px
@@ -653,14 +661,11 @@ ul.table-of-contents {
 // 関連記事
 #box2 .hatena-module-related-entries {
     .hatena-module-title:before {
-        font-family: FontAwesome;
-        content: "\f304";
+        .fontawesome(@fa-var-pen, 0);
     }
 
     .related-entries-item a:before{
-        font-family: FontAwesome;
-        content: "\f14b";
-        padding-right: 4px;
+        .fontawesome(@fa-var-pen-square, 4px);
     }
 }
 
@@ -668,14 +673,23 @@ ul.table-of-contents {
 // 最新記事
 .hatena-module-recent-entries {
     .hatena-module-title:before {
-        font-family: FontAwesome;
-        content: "\f304";
+        .fontawesome(@fa-var-pen, 0);
     }
 
     .recent-entries-item a:before{
-        font-family: FontAwesome;
-        content: "\f14b";
-        padding-right: 4px;
+        .fontawesome(@fa-var-pen-square, 4px);
+    }
+}
+
+// -------------------------
+// 注目記事
+.hatena-module-entries-access-ranking {
+    .hatena-module-title:before {
+        .fontawesome(@fa-var-pen, 0);
+    }
+
+    .entries-access-ranking-item a:before{
+        .fontawesome(@fa-var-pen-square, 4px);
     }
 }
 
@@ -683,8 +697,7 @@ ul.table-of-contents {
 // 月刊アーカイブ
 .hatena-module-archive {
     .hatena-module-title:before {
-        font-family: FontAwesome;
-        content: "\f133";
+        .fontawesome(@fa-var-calendar, 0);
     }
 }
 
@@ -712,9 +725,7 @@ ul.table-of-contents {
 // 参加グループ
 .hatena-module-circles {
     .hatena-module-title:before {
-        .fontawesome(@fa-var-tag, 0);
-        font-family: FontAwesome;
-        content: "\f500";
+        .fontawesome(@fa-var-user-group, 0);
     }
 }
 
