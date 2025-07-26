@@ -8,9 +8,9 @@
     『よしたかの日常』用にカスタマイズをしていっています。
 */
 
-/**
-* Import Files
-*/
+// -------------------------
+// インポートファイル
+// -------------------------
 // boilerplate
 @import "less/_normalize.less";
 @import "less/_mixin.less";
@@ -19,9 +19,9 @@
 // Font Awesome
 @import "fontawesome/fontawesome.less";
 
-/**
-* Common Style
-*/
+// -------------------------
+// Common Style
+// -------------------------
 html,
 body {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic', sans-serif;
@@ -77,9 +77,9 @@ a.keyword {
     color: @text;
 }
 
-/**
-* Buttons
-*/
+// -------------------------
+// ボタン類
+// -------------------------
 .btn {
     .inline-block;
     padding: 4px 10px 4px;
@@ -114,10 +114,11 @@ a.keyword {
     font-weight: bold;
 }
 
-/* ヘッダ（グローバルヘッダ）
-  グローバルヘッダの中はiframeですが、
-  #globalheader-container に背景色や文字色を指定することでiframeの中にも色が反映されます。
-*/
+// -------------------------
+// ヘッダ（グローバルヘッダ）
+// グローバルヘッダの中はiframeですが、
+// #globalheader-container に背景色や文字色を指定することでiframeの中にも色が反映されます。
+// -------------------------
 #globalheader-container {
     // position: fixed;
     // top: 0;
@@ -128,9 +129,9 @@ a.keyword {
     border-bottom: 1px solid white;
 }
 
-/**
-* Container
-*/
+// -------------------------
+// コンテナ
+// -------------------------
 #container {
     width: 900px;
     margin: 0 auto;
@@ -150,9 +151,9 @@ a.keyword {
     padding-top: 0; // グローバルヘッダ非表示の時
 }
 
-/**
-* 2カラムレイアウト
-*/
+// -------------------------
+// 2カラムレイアウト
+// -------------------------
 #wrapper {
     width: 630px;
     float: left;
@@ -164,9 +165,9 @@ a.keyword {
     word-wrap: break-word;
 }
 
-/**
-* Header
-*/
+// -------------------------
+// ヘッダー
+// -------------------------
 #blog-title {
     padding: 70px 0;
     #blog-title-inner {
@@ -184,9 +185,9 @@ a.keyword {
     font-size: 12px;
 }
 
-/**
-* ヘッダ画像を設定したとき
-*/
+// -------------------------
+// ヘッダ画像を設定したとき
+// -------------------------
 .header-image-enable {
     #blog-title {padding: 20px 0}
     #title {padding: 20px 0 0 20px}
@@ -197,17 +198,18 @@ a.keyword {
     }
 }
 
-/**
-* パンくず（カテゴリーページで表示されます）
-*/
+// -------------------------
+// パンくず
+// カテゴリーページで表示されます
+// -------------------------
 #top-box {
     margin: 16px auto 16px;
     font-size: 90%;
 }
 
-/**
-* パンくず
-*/
+// -------------------------
+// パンくず
+// -------------------------
 .breadcrumb {
     margin-bottom: 2em;
     .breadcrumb-link:before {
@@ -218,17 +220,17 @@ a.keyword {
     }
 }
 
-/**
-* スポンサーリンク
-*/
+// -------------------------
+// スポンサーリンク
+// -------------------------
 .sponsor-title {
     margin-bottom: 8px;
     text-align: center;
 }
 
-/**
-* entry
-*/
+// -------------------------
+// 記事
+// -------------------------
 .entry {
     position: relative;
     margin-bottom: 80px;
@@ -249,9 +251,8 @@ a.keyword {
     }
 }
 
-/**
-* 日付
-*/
+// -------------------------
+// 日付
 .date {
     font-size: 16px;
     font-weight: bold;
@@ -267,9 +268,8 @@ a.keyword {
     }
 }
 
-/**
-* カテゴリ
-*/
+// -------------------------
+// カテゴリ
 .categories {
     margin-top: 8px;
     font-size: 14px;
@@ -289,9 +289,9 @@ a.keyword {
     }
 }
 
-/**
-* 「編集する」ボタン
-*/
+// -------------------------
+// 「編集する」ボタン
+// -------------------------
 .entry-header-menu {
     position: absolute;
     top: 0;
@@ -305,9 +305,10 @@ a.keyword {
     }
 }
 
-/**
-* entry-content の中の書式
-*/
+// -------------------------
+// 記事本文
+// entry-content の中の書式
+// -------------------------
 .entry-content {
     font-size: 15px;
     line-height: 1.7;
@@ -425,9 +426,8 @@ a.keyword {
     }
 }
 
-/**
-* 目次
-*/
+// -------------------------
+// 目次
 ul.table-of-contents {
     position: relative;
     margin: 16px;
@@ -448,16 +448,15 @@ ul.table-of-contents {
     }
 }
 
-/**
-* 続きを読む
-*/
+// -------------------------
+// 続きを読む
 .entry-see-more:after {
     .fontawesome-after(@fa-var-caret-down);
 }
 
-/**
-* entry-footer
-*/
+// -------------------------
+// エントリーフッター
+// -------------------------
 .entry-footer {
     margin-top: 10px;
 }
@@ -481,23 +480,20 @@ ul.table-of-contents {
     margin: 10px 0;
 }
 
-/**
-* はてなスター
-*/
+// -------------------------
+// はてなスター
 .hatena-star-container {
     margin-bottom: 16px;
 }
 
-/**
-* SNSボタン
-*/
+// -------------------------
+// SNSボタン
 .social-buttons {
     margin: 16px 0;
 }
 
-/**
-* コメント
-*/
+// -------------------------
+// コメント
 .comment-box {
     ul {
         list-style: none;
@@ -555,9 +551,9 @@ ul.table-of-contents {
     }
 }
 
-/**
-* Sidebar Style
-*/
+// -------------------------
+// サイドバー
+// -------------------------
 #box2 {
 }
 .hatena-module {
@@ -577,9 +573,8 @@ ul.table-of-contents {
     }
 }
 
-/**
-* Module Body
-*/
+// -------------------------
+// モジュール
 .hatena-module-body {
     // padding: 0 8px;
     li {
@@ -587,9 +582,8 @@ ul.table-of-contents {
     }
 }
 
-/**
-* Profile module
-*/
+// -------------------------
+// プロフィール
 .hatena-module-profile {
     margin-bottom: 4px;
     .hatena-module-title:before {
@@ -640,10 +634,11 @@ ul.table-of-contents {
     }
 }
 
-/**
-* urllist module
-* リンク・最新記事・最近のコメント・月別アーカイブ・カテゴリモジュールは、.hatena-urllist という共通の class が振られます
-*/
+// -------------------------
+// 追加モジュール
+// urllist module
+// リンク・最新記事・最近のコメント・月別アーカイブ・カテゴリモジュールは、.hatena-urllist という共通の class が振られます
+// -------------------------
 .hatena-urllist {
     list-style: none;
     margin: 0 0 0 0;
@@ -653,9 +648,9 @@ ul.table-of-contents {
         line-height: 1.5;
     }
 }
-/**
-* 関連記事
-*/
+
+// -------------------------
+// 関連記事
 #box2 .hatena-module-related-entries {
     .hatena-module-title:before {
         font-family: FontAwesome;
@@ -668,9 +663,9 @@ ul.table-of-contents {
         padding-right: 4px;
     }
 }
-/**
-* 最新記事
-*/
+
+// -------------------------
+// 最新記事
 .hatena-module-recent-entries {
     .hatena-module-title:before {
         font-family: FontAwesome;
@@ -683,18 +678,18 @@ ul.table-of-contents {
         padding-right: 4px;
     }
 }
-/**
-* 月刊アーカイブ
-*/
+
+// -------------------------
+// 月刊アーカイブ
 .hatena-module-archive {
     .hatena-module-title:before {
         font-family: FontAwesome;
         content: "\f133";
     }
 }
-/**
-* カテゴリー
-*/
+
+// -------------------------
+// カテゴリー
 .hatena-module-category {
     .hatena-module-title:before {
         .fontawesome(@fa-var-tag, 0);
@@ -713,9 +708,8 @@ ul.table-of-contents {
     }
 }
 
-/**
-* 参加グループ
-*/
+// -------------------------
+// 参加グループ
 .hatena-module-circles {
     .hatena-module-title:before {
         .fontawesome(@fa-var-tag, 0);
@@ -724,9 +718,8 @@ ul.table-of-contents {
     }
 }
 
-/**
-* 検索
-*/
+// -------------------------
+// 検索
 .hatena-module-search-box {
     .search-form {
         border: 1px solid @border;
@@ -762,9 +755,8 @@ ul.table-of-contents {
     }
 }
 
-/**
-* リンク
-*/
+// -------------------------
+// リンク
 .hatena-module-links {
     .hatena-module-body {
         a:before {
@@ -773,9 +765,9 @@ ul.table-of-contents {
     }
 }
 
-/**
-* Pager
-*/
+// -------------------------
+// ページャー
+// -------------------------
 .pager {
     margin: 1em 0;
     .clearfix;
@@ -798,9 +790,9 @@ ul.table-of-contents {
     }
 }
 
-/**
-* Footer
-*/
+// -------------------------
+// フッター
+// -------------------------
 #footer {
     width: 870px;
     margin: 0 auto;
@@ -814,9 +806,9 @@ ul.table-of-contents {
     a {color: @text-light}
 }
 
-/**
-* 自作フッター
-*/
+// -------------------------
+// 自作フッター
+// -------------------------
 .footer {
     padding: 40px 0;
     color: @text;
@@ -838,10 +830,9 @@ ul.table-of-contents {
     }
 }
 
-
-/**
-* About ページ
-*/
+// -------------------------
+// About ページ
+// -------------------------
 .page-about {
     dt {
         font-size: 16px;
@@ -855,9 +846,9 @@ ul.table-of-contents {
     }
 }
 
-/**
-* archive ページ
-*/
+// -------------------------
+// archive ページ
+// -------------------------
 .page-archive {
     .archive-entries {
         .archive-entry {
@@ -890,7 +881,6 @@ ul.table-of-contents {
     }
 }
 
-/**
-* Import Media Queries
-*/
+// -------------------------
+// Import Media Queries
 @import "less/_media-queries.less";
